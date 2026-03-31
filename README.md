@@ -1,6 +1,5 @@
 # 🚀 Telegram AI Monitor
 
-![Preview](./preview.png)
 
 An AI-powered Telegram monitoring dashboard that ingests live messages, classifies them using LLMs, and displays insights through a modern web interface.
 
