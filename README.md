@@ -311,14 +311,4 @@ Telegram updates
 * Use PostgreSQL in production
 * Render free tier may sleep
 
----
 
-## 📄 License
-
-MIT License
-
----
-
-## 👨‍💻 Author
-
-Built as a full-stack AI system demonstrating real-world LLM integration, webhook handling, and dashboard visualization.
